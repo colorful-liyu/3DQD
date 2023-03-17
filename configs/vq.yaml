@@ -1,0 +1,34 @@
+# change from o4
+model:  
+  target: models.networks.transformer_networks.diff_transformer.diffusion_transformer.DiffusionTransformer
+  params:
+    diffusion_step: 100
+    alpha_init_type: 'alpha1'        
+    auxiliary_loss_weight: 1.0e-3
+    adaptive_auxiliary_loss: True
+    mask_weight: [1, 1]    # the loss weight on mask region and non-mask region
+
+    transformer_config:
+      target: models.networks.transformer_networks.diff_transformer.transformer_utils.Condition2ImageTransformer
+      params:
+        attn_type: 'selfcondition' # 'self'
+        class_number: 13
+        n_layer: 20
+        content_seq_len: 512  # 32 x 32
+        content_spatial_size: [8, 8, 8]
+        n_embd: 256 # the dim of embedding dims   # both this and content_emb_config
+        n_head: 16 
+        attn_pdrop: 0.0
+        resid_pdrop: 0.0
+        block_activate: GELU2
+        timestep_type: 'adalayernorm'    # adainsnorm or adalayernorm and abs
+        mlp_hidden_times: 4
+        mlp_type: 'conv_mlp'
+    content_emb_config:
+      target: models.networks.transformer_networks.diff_transformer.dalle_mask_image_embedding.DalleMaskImageEmbedding
+      params:
+        num_embed: 512
+        spatial_size: !!python/tuple [8, 8, 8]
+        embed_dim: 256
+        trainable: True
+        pos_emb_type: embedding

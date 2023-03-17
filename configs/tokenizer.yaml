@@ -1,0 +1,12 @@
+model:
+  target: models.networks.transformer_networks.clip.text_codec.Tokenize
+  params:
+    context_length: 77     ############# 77 for clip and 256 for dalle
+    add_start_and_end: True
+    with_mask: True
+    pad_value: 0 # 0 for clip embedding and -100 for others
+    clip_embedding: False     ############################   if we use clip embedding 
+    tokenizer_config:
+      target: models.networks.transformer_networks.clip.simple_tokenizer.SimpleTokenizer   #########
+      params:
+        end_idx: 49152     
