@@ -1,11 +1,11 @@
 # 3DQD: Generalized Deep 3D Shape Prior via Part-Discretized Diffusion Process<br><sub><sub>Official PyTorch implementation of the CVPR 2023 paper</sub></sub>
-[[`arXiv`]()]
+[[`arXiv`](https://arxiv.org/abs/2303.10406)]
 [[`BibTex`](#citation)]
 
 ![Teaser image](./assets/teaser.png)
 
 # Introduction
-[**3DQD: Generalized Deep 3D Shape Prior via Part-Discretized Diffusion Process**]()<br>
+[**3DQD: Generalized Deep 3D Shape Prior via Part-Discretized Diffusion Process**](https://arxiv.org/abs/2303.10406)<br>
 Yuhan Li, Yishun Dou, Xuanhong Chen, Bingbing Ni, Yilin Sun, Yutian Liu and Fuzhen Wang
 
 **[abstract]** *3DQD is a generalized 3D shape generation prior model, tailored for multiple 3D tasks including unconditional shape generation, point cloud completion, and crossmodality shape generation, etc. 3DQD first learns a compact representation with P-VQ-VAE for its advantages in computational saving and consistency among
@@ -159,7 +159,12 @@ After training, copy the trained `P-VQ-VAE` checkpoint (`pretrained-vqvae-snet.c
 If you find our work useful to your research, please consider citing:
 
 ```BibTeX
-
+@misc{2303.10406,
+Author = {Yuhan Li and Yishun Dou and Xuanhong Chen and Bingbing Ni and Yilin Sun and Yutian Liu and Fuzhen Wang},
+Title = {3DQD: Generalized Deep 3D Shape Prior via Part-Discretized Diffusion Process},
+Year = {2023},
+Eprint = {arXiv:2303.10406},
+}
 ```
 
 # Acknowledgement
