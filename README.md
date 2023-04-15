@@ -56,6 +56,7 @@ Pre-trained models are available [here](https://drive.google.com/drive/folders/1
 The download the pre-trained models from the provided links should be put into the `./saved_ckpt` folder.
 
 # Preparing the Data
+[[`One Drive`](https://1drv.ms/u/s!ApvxZzWKg6qdhAa16a5AqsPjQen4?e=0pr3fs6)]
 We follow the instructions from [AutoSDF](https://github.com/yccyenchicheng/AutoSDF) to preprocess data.
 
 1. [ShapeNet](https://www.shapenet.org)
@@ -63,6 +64,8 @@ We follow the instructions from [AutoSDF](https://github.com/yccyenchicheng/Auto
 First you need to download the `ShapeNetCore.v1` following the instruction of `https://www.shapenet.org/account/`. 
 
 To extract SDF values, we followed the [preprocessing steps from DISN](https://github.com/laughtervv/DISN).
+
+The preprocessed data can ge download from [One Drive](https://1drv.ms/u/s!ApvxZzWKg6qdhAa16a5AqsPjQen4?e=0pr3fs)
 
 2. [ShapeGlot](https://github.com/optas/shapeglot)  
 
