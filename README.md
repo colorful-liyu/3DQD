@@ -73,7 +73,7 @@ First you need to download the `ShapeNetCore.v1` following the instruction of `h
 
 To extract SDF values, we followed the [preprocessing steps from DISN](https://github.com/laughtervv/DISN).
 
-The preprocessed data can ge download from [One Drive](https://1drv.ms/u/s!ApvxZzWKg6qdhAa16a5AqsPjQen4?e=0pr3fs)
+The preprocessed data can be downloaded from [One Drive](https://1drv.ms/u/s!ApvxZzWKg6qdhAa16a5AqsPjQen4?e=0pr3fs)
 
 2. [ShapeGlot](https://github.com/optas/shapeglot)  
 
@@ -83,7 +83,7 @@ git clone https://github.com/optas/shapeglot
 
 # Follow the instructions from ShapeGlot to download the shape-text pairs data.
 # You need first finish a questionnaire in https://github.com/optas/shapeglot. 
-# Then you will recieve a link and put it into the file 'download_data.sh'.
+# Then you will receive a link and put it into the file 'download_data.sh'.
 
 cd shapeglot/
 ./download_data.sh
@@ -93,7 +93,7 @@ cd shapeglot/
 
 We preprocess the Pix3D datasets similarly to ShapeNet.
 
-The preprocessed data can ge download from [One Drive](https://github.com/xingyuansun/pix3d).
+The preprocessed data can be downloaded from [One Drive](https://1drv.ms/u/s!ApvxZzWKg6qdhFYRe3r2pXenbtu6?e=UnWEap).
 
 **The layout should look like this**
 ```
