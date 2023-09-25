@@ -43,11 +43,20 @@ conda activate 3dqd
 - light-field-distance == 0.0.9
 - Frechet Pointcloud Distance  (Following the instructions from [TreeGAN](https://github.com/jtpils/TreeGAN))
 - Pytorch Chamfer Distance
+```
+cd metrics/pvd_metrics/ChamferDistancePytorch/chamfer3D
+python setup.py install
+```
 - PyTorchEMD
 ```
 cd metrics/pvd_metrics/PyTorchEMD
 python setup.py install
 cp build/**/emd_cuda.cpython-38-x86_64-linux-gnu.so .
+```
+
+- pointnet2-ops
+```
+pip install git+https://gitee.com/Fukexue/Pointnet2_PyTorch.git@acda965224f35854bc331cd5fe140393216b0a71#subdirectory=pointnet2_ops_lib
 ```
 
 
