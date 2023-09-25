@@ -73,7 +73,7 @@ First you need to download the `ShapeNetCore.v1` following the instruction of `h
 
 To extract SDF values, we followed the [preprocessing steps from DISN](https://github.com/laughtervv/DISN).
 
-The preprocessed data can be downloaded from [One Drive](https://1drv.ms/u/s!ApvxZzWKg6qdhAa16a5AqsPjQen4?e=0pr3fs)
+The preprocessed data can be downloaded from [One Drive](https://1drv.ms/u/s!ApvxZzWKg6qdhAaJBq1qFa1sIqYV?e=8spCDn)
 
 2. [ShapeGlot](https://github.com/optas/shapeglot)  
 
