@@ -14,10 +14,9 @@ different tasks. Then a novel discrete diffusion generator is trained with accur
 
 
 # Demo
-We plan to release demo to show the all of extended applications of our model. 
-```
-Comming soom!
-```
+We have released the demo to show extended applications of single-view reconstruction!
+
+Please refer to `demo_imgdf.ipynb`.
 
 
 # Installation
@@ -92,13 +91,16 @@ cd shapeglot/
 
 3. (Optional for single-view reconstruciton)[Pix3D](https://github.com/xingyuansun/pix3d)
 
-The Pix3D dataset can be downloaded here: https://github.com/xingyuansun/pix3d.
+We preprocess the Pix3D datasets similarly to ShapeNet.
+
+The preprocessed data can ge download from [One Drive](https://github.com/xingyuansun/pix3d).
 
 **The layout should look like this**
 ```
 ├── 3DQD
 ├── dataset [This is your dataroot]
 │   ├── ShapeGlot
+│   ├── pix3d
 │   ├── ShapeNet
 │   │   ├── 20691156
 │   │   │   ├── *****************
