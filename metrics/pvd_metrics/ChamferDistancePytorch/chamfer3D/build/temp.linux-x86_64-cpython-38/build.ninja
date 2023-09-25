@@ -1,10 +1,10 @@
 ninja_required_version = 1.3
 cxx = c++
-nvcc = /usr/local/cuda-11.6/bin/nvcc
+nvcc = /usr/local/cuda-11.3/bin/nvcc
 
-cflags = -pthread -B /home/ps/anaconda3/envs/autosdf/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/ps/anaconda3/envs/autosdf/lib/python3.8/site-packages/torch/include -I/home/ps/anaconda3/envs/autosdf/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/ps/anaconda3/envs/autosdf/lib/python3.8/site-packages/torch/include/TH -I/home/ps/anaconda3/envs/autosdf/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda-11.6/include -I/home/ps/anaconda3/envs/autosdf/include/python3.8 -c
+cflags = -pthread -B /data1/lyh/anaconda3/envs/3dqd/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/data1/lyh/anaconda3/envs/3dqd/lib/python3.8/site-packages/torch/include -I/data1/lyh/anaconda3/envs/3dqd/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/data1/lyh/anaconda3/envs/3dqd/lib/python3.8/site-packages/torch/include/TH -I/data1/lyh/anaconda3/envs/3dqd/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda-11.3/include -I/data1/lyh/anaconda3/envs/3dqd/include/python3.8 -c
 post_cflags = -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=chamfer_3D -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
-cuda_cflags = -I/home/ps/anaconda3/envs/autosdf/lib/python3.8/site-packages/torch/include -I/home/ps/anaconda3/envs/autosdf/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/ps/anaconda3/envs/autosdf/lib/python3.8/site-packages/torch/include/TH -I/home/ps/anaconda3/envs/autosdf/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda-11.6/include -I/home/ps/anaconda3/envs/autosdf/include/python3.8 -c
+cuda_cflags = -I/data1/lyh/anaconda3/envs/3dqd/lib/python3.8/site-packages/torch/include -I/data1/lyh/anaconda3/envs/3dqd/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/data1/lyh/anaconda3/envs/3dqd/lib/python3.8/site-packages/torch/include/TH -I/data1/lyh/anaconda3/envs/3dqd/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda-11.3/include -I/data1/lyh/anaconda3/envs/3dqd/include/python3.8 -c
 cuda_post_cflags = -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=chamfer_3D -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++14
 ldflags = 
 
@@ -20,8 +20,8 @@ rule cuda_compile
 
 
 
-build /home/ps/lyh/vqsdf/pvd_metrics/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-38/chamfer3D.o: cuda_compile /home/ps/lyh/vqsdf/pvd_metrics/ChamferDistancePytorch/chamfer3D/chamfer3D.cu
-build /home/ps/lyh/vqsdf/pvd_metrics/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-38/chamfer_cuda.o: compile /home/ps/lyh/vqsdf/pvd_metrics/ChamferDistancePytorch/chamfer3D/chamfer_cuda.cpp
+build /data1/lyh/move/3DQD/metrics/pvd_metrics/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-38/chamfer3D.o: cuda_compile /data1/lyh/move/3DQD/metrics/pvd_metrics/ChamferDistancePytorch/chamfer3D/chamfer3D.cu
+build /data1/lyh/move/3DQD/metrics/pvd_metrics/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-38/chamfer_cuda.o: compile /data1/lyh/move/3DQD/metrics/pvd_metrics/ChamferDistancePytorch/chamfer3D/chamfer_cuda.cpp
 
 
 

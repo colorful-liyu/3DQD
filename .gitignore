@@ -19,7 +19,6 @@ uncond_vis
 launchers/eval_comp.sh
 launchers/eval_uncond.sh
 demo_denoise.ipynb
-demo_imgdf.ipynb
 demo_shape_comp.ipynb
 demo_single_view_recon.ipynb
 demo_textdf.ipynb

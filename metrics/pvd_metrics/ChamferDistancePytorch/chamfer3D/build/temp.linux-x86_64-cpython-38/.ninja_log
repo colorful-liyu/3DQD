@@ -1,3 +1,5 @@
 # ninja log v5
 0	10532	1666243253916189146	/home/ps/lyh/vqsdf/pvd_metrics/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-38/chamfer3D.o	df7466acad587cf9
 1	18540	1666243261924207825	/home/ps/lyh/vqsdf/pvd_metrics/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-38/chamfer_cuda.o	f88fd69979463d3a
+2	10518	1695628266871128755	/data1/lyh/move/3DQD/metrics/pvd_metrics/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-38/chamfer3D.o	9a2c3e6c6640a4
+3	19572	1695628275919145680	/data1/lyh/move/3DQD/metrics/pvd_metrics/ChamferDistancePytorch/chamfer3D/build/temp.linux-x86_64-cpython-38/chamfer_cuda.o	10316e89d7fe03d5
