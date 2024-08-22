@@ -93,7 +93,7 @@ cd shapeglot/
 
 We preprocess the Pix3D datasets similarly to ShapeNet.
 
-The preprocessed data can be downloaded from [One Drive](https://1drv.ms/u/s!ApvxZzWKg6qdhFYRe3r2pXenbtu6?e=UnWEap).
+The preprocessed data can be downloaded from [One Drive](https://1drv.ms/u/c/9daa838a3567f19b/EX579npQYYtIiQNvWdu7zbcBP2tTbW2Xk3SOk9MKxTPNAg?e=i10UvZ).
 
 **The layout should look like this**
 ```
